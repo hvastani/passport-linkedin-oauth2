@@ -1,11 +1,11 @@
 {
-  "name": "passport-linkedin-oauth2",
+  "name": "@hvastani/passport-linkedin-oauth2",
   "version": "2.0.0",
   "description": "Passport for LinkedIn OAuth2 API v2",
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/auth0/passport-linkedin-oauth2"
+    "url": "git+https://github.com/hvastani/passport-linkedin-oauth2.git"
   },
   "scripts": {
     "test": "mocha -t 5000"
@@ -36,6 +36,10 @@
   "dependencies": {
     "passport-oauth2": "1.x.x"
   },
+  "bugs": {
+    "url": "https://github.com/hvastani/passport-linkedin-oauth2/issues"
+  },
+  "homepage": "https://github.com/hvastani/passport-linkedin-oauth2#readme",
   "directories": {
     "example": "example",
     "lib": "lib",
