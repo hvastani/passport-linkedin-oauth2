@@ -1,15 +1,15 @@
-A simple [Passport](http://passportjs.org/) strategy for LinkedIn OAuth2 that works with lite profile.
+A simple [Passport](http://passportjs.org/) strategy for LinkedIn OAuth2 that works with full profile
 
 ## Install
 
-  npm install passport-linkedin-oauth2
+  npm install @hvastani/passport-linkedin-oauth2
 
 ## Usage
 
 Register the strategy
 
 ~~~javascript
-var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
+var LinkedInStrategy = require('@hvastani/passport-linkedin-oauth2').Strategy;
 
 passport.use(new LinkedInStrategy({
   clientID: LINKEDIN_KEY,
@@ -61,7 +61,7 @@ passport.use(new LinkedInStrategy({
   clientID: LINKEDIN_KEY,
   clientSecret: LINKEDIN_SECRET,
   callbackURL: "http://127.0.0.1:3000/auth/linkedin/callback",
-  scope: ['r_emailaddress', 'r_liteprofile'],
+  scope: ['r_emailaddress', 'r_fullprofile'],
   state: true
 }, function(accessToken, refreshToken, profile, done) {
   // asynchronous verification, for effect...
