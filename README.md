@@ -15,7 +15,7 @@ passport.use(new LinkedInStrategy({
   clientID: LINKEDIN_KEY,
   clientSecret: LINKEDIN_SECRET,
   callbackURL: "http://127.0.0.1:3000/auth/linkedin/callback",
-  scope: ['r_emailaddress', 'r_liteprofile'],
+  scope: ['r_emailaddress', 'r_fullprofile'],
 }, function(accessToken, refreshToken, profile, done) {
   // asynchronous verification, for effect...
   process.nextTick(function () {
@@ -55,7 +55,7 @@ See [this](https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-
 The `state` param is used to prevent CSRF attacks, and is [required by the LinkedIn API](https://developer.linkedin.com/documents/authentication). You can ask Passport to handle the sending and validating of the `state` parameter by passing `state: true` as an option to the strategy:
 
 ~~~javascript
-var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
+var LinkedInStrategy = require('@hvastani/passport-linkedin-oauth2').Strategy;
 
 passport.use(new LinkedInStrategy({
   clientID: LINKEDIN_KEY,
