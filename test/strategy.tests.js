@@ -64,7 +64,12 @@ describe('LinkedIn Strategy', function () {
           profile.name.familyName.should.eql('Belcher');
           profile.displayName.should.eql('Tina Belcher');
           profile.photos.should.eql([{
-            value: 'https://media.licdn.com/dms/image/C4D03AQGsitRwG8U8ZQ/profile-displayphoto-shrink_100_100/0?e=1526940000&v=alpha&t=12345'
+            value: 'https://media.licdn.com/dms/image/C4D03AQGsitRwG8U8ZQ/profile-displayphoto-shrink_100_100/0?e=1526940000&v=alpha&t=12345',
+            displaysize: {
+              height: 100,
+              uom: "PX",
+              width: 100
+            }
           }]);
 
           done();
@@ -134,7 +139,12 @@ describe('LinkedIn Strategy', function () {
           profile.name.familyName.should.eql('Belcher');
           profile.displayName.should.eql('Tina Belcher');
           profile.photos.should.eql([{
-            value: 'https://media.licdn.com/dms/image/C4D03AQGsitRwG8U8ZQ/profile-displayphoto-shrink_100_100/0?e=1526940000&v=alpha&t=12345'
+            value: 'https://media.licdn.com/dms/image/C4D03AQGsitRwG8U8ZQ/profile-displayphoto-shrink_100_100/0?e=1526940000&v=alpha&t=12345',
+            displaysize: {
+              height: 100,
+              uom: "PX",
+              width: 100
+            }
           }]);
 
           // TODO: add basic profile fields once we have a valid example.
@@ -189,7 +199,12 @@ describe('LinkedIn Strategy', function () {
           profile.name.familyName.should.eql('Belcher');
           profile.displayName.should.eql('Tina Belcher');
           profile.photos.should.eql([{
-            value: 'https://media.licdn.com/dms/image/C4D03AQGsitRwG8U8ZQ/profile-displayphoto-shrink_100_100/0?e=1526940000&v=alpha&t=12345'
+            value: 'https://media.licdn.com/dms/image/C4D03AQGsitRwG8U8ZQ/profile-displayphoto-shrink_100_100/0?e=1526940000&v=alpha&t=12345',
+            displaysize: {
+              height: 100,
+              uom: "PX",
+              width: 100
+            }
           }]);
 
           // TODO: add full profile fields once we have a valid example.
