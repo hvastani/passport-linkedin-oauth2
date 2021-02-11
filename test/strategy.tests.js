@@ -16,7 +16,7 @@ describe('LinkedIn Strategy', function () {
 
   const basicProfilePath = '/v2/me?projection=(id%2CfirstName%2ClastName%2CmaidenName%2Cheadline%2CprofilePicture(displayImage~%3AplayableStreams)%2CvanityName)&oauth2_access_token=whatever'; 
 
-  const fullProfilePath = '/v2/me?projection=(id%2Caddress%2CbackgroundPicture(displayImage~digitalmediaAsset%3AplayableStreams)%2CbirthDate%2Ccertifications%2Ccourses%2Ceducations%2CfirstName%2CgeoLocation%2Cheadline%2Chonors%2CindustryId%2CindustryName%2ClastName%2ClastModified%2CmaidenName%2Corganizations%2Cpatents%2CphoneNumbers%2CphoneticFirstName%2CphoneticLastName%2Cpositions%2CprofilePicture(displayImage~%3AplayableStreams)%2Cprojects%2Cpublications%2Cskills%2Csummary%2CtestScores%2CvanityName%2CvolunteeringExperiences%2CvolunteeringInterests%2Cwebsites)&oauth2_access_token=whatever';
+  const fullProfilePath = '/v2/me?projection=(id%2Caddress%2CbackgroundPicture(displayImage~digitalmediaAsset%3AplayableStreams)%2CbirthDate%2Ccertifications%2Ccourses%2Ceducations%2CfirstName%2CgeoLocation(geo~)%2Cheadline%2Chonors%2CindustryId%2CindustryName%2ClastName%2ClastModified%2CmaidenName%2Corganizations%2Cpatents%2CphoneNumbers%2CphoneticFirstName%2CphoneticLastName%2Cpositions%2CprofilePicture(displayImage~%3AplayableStreams)%2Cprojects%2Cpublications%2Cskills%2Csummary%2CtestScores%2CvanityName%2CvolunteeringExperiences%2CvolunteeringInterests%2Cwebsites)&oauth2_access_token=whatever';
 
   it('sanity check', function (done) {
     const options = {
